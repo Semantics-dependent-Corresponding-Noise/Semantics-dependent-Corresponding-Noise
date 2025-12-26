@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 # 设置 KimiChat API 密钥和 API 端点
 client = OpenAI(
-    api_key="sk-j1oIJtCDLxf7ICdCCsY72pH2Lq0WzilxgT4XcoPxaNCyazzb",
+    api_key="yours api",
     base_url="https://api.moonshot.cn/v1"
 )
 
