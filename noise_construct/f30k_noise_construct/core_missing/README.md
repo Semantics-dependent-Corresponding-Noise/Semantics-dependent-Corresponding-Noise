@@ -9,7 +9,8 @@
 | `merge_files.py` | Merges the split batch files into a single complete file. |
 | `core_missing_noise.py` | Generates partial error noise (Mixed). |
 | `core_missing_img5txt_noise.py` | Generates all-error noise (Total). |
-| `./train_flickr/` | Directory where batch output files are saved. |
+| `./train_flickr/` | Directory where training batch output files are saved. |
+| `./test_flickr/` | Directory where test batch output files are saved. |
 
 ---
 
