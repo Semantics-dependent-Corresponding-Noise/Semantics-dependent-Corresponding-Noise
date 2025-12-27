@@ -32,10 +32,3 @@ Run the command `python k_means_noise.py` to generate a dataset where **not all*
 
 **2. All Error (Total)**
 Run the command `python k_means_img5txt_error_noise.py` to generate a dataset where **all 5** descriptions for a given image are erroneous (100% error rate for the selected images).
-
----
-
-## 3. Configuration & Notes
-
-### Important Notes
-Please strictly follow the execution order: **Generate (Base) → Ratio Generation**. Generating the 100% error base file (Phase I) is the mandatory foundation for the ratio generation scripts in Phase III. Ensure all scripts are executed from the project root directory.
