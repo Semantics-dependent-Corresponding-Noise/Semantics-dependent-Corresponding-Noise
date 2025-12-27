@@ -171,9 +171,6 @@ if __name__ == "__main__":
     input_directory = "/path/noise_construct/MSCOCO_noise_cinstruct/incomplete_description/noise"
     output_file_path = "/path/noise_construct/MSCOCO_noise_cinstruct/incomplete_description/1.0_noise_train_caps_preliminary.txt"
     
-    # Optional: Check for missing files
-    # print("Checking for missing files...")
-    # find_missing_files(input_directory, start_num=1, end_num=567)
     
     merge_noisy_files(
         input_dir=input_directory,
