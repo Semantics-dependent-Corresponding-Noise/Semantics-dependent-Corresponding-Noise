@@ -34,7 +34,6 @@ for replace_ratio in replace_ratios:
     
     with open(output_file_path, 'w', encoding='utf-8') as f:
         for text in modified_texts:
-            # Remove leading numbering and dot (e.g., "1. ")
             cleaned_text = text.lstrip().split('. ', 1)
             if len(cleaned_text) == 2 and cleaned_text[0].isdigit():
                 text = cleaned_text[1]
