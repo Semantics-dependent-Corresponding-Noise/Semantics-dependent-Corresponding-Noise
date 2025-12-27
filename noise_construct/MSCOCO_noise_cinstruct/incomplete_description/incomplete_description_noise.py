@@ -2,7 +2,7 @@ import random
 from tqdm import tqdm
 
 # Read original text data
-file_path = '/path/dataset/incomplete_description_noise_5error_MSCOCO/annotations/scan_split/0_noise_train_caps.txt'
+file_path = '/path/dataset/incomplete_description_noise_MSCOCO/annotations/scan_split/0_noise_train_caps.txt'
 
 with open(file_path, 'r', encoding='utf-8') as f:
     raw_texts = f.readlines()
