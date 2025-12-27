@@ -1,4 +1,4 @@
-# Noise File Generation Workflow
+# Core Missing Noise File Generation Workflow
 
 ## 1. Project Structure
 
