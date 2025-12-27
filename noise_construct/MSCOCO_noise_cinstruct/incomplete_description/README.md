@@ -5,8 +5,8 @@
 | File Name | Description |
 | :--- | :--- |
 | `split_file.py` | Splits the original training file into smaller parts (1000 lines each) to reduce generation errors. |
-| `incomplete_description_noise_construct.py` | Generates noise for each split file sequentially. |
 | `merge.py` | Merges the split noise files into a preliminary total file. |
+| `incomplete_description_noise_construct.py` | Generates noise for each split file sequentially. |
 | `incomplete_desrciption_noise_complete_construct.py` | Compares the noise file with the original, re-modifies identical lines to ensure 100% noise, and saves the final file. |
 | `incomplete_description_test_noise_construct.py` | Generates noise for the test set directly. |
 | `incomplete_description_noise.py` | Generates partial error noise (some descriptions contain errors). |
