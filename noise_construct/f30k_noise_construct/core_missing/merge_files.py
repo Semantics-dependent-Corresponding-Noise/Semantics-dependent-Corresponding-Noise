@@ -131,10 +131,10 @@ def sync_merge_description_files(input_dir, output_file):
 
 if __name__ == "__main__":
     # Input directory (directory containing split files)
-    INPUT_DIR = '/home/zbm/xjd/NPC-master/dataset/core_missing_Error_noise_f30k/annotations/test'
+    INPUT_DIR = '/path/noise_construct/f30k_noise_construct/core_missing/train_flickr'
     
     # Output file (merged complete file)
-    OUTPUT_FILE = '/home/zbm/xjd/NPC-master/dataset/core_missing_Error_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
+    OUTPUT_FILE = '/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
     
     # Whether to use async mode (Recommended True for faster speed)
     USE_ASYNC = True
