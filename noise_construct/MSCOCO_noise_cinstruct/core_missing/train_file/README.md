@@ -1,1 +1,1 @@
-
+Training data output directory.
