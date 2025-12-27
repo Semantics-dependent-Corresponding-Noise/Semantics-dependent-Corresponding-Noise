@@ -11,7 +11,7 @@ with open(file_path, 'r', encoding='utf-8') as f:
 raw_texts = [text.strip() for text in raw_texts]
 
 # Noise file path
-noise_file_path = /path/dataset/Entity_Referential_Error_noise_5error_MSCOCO/annotations/scan_split/1.0_noise_train_caps.txt'
+noise_file_path = '/path/dataset/Entity_Referential_Error_noise_5error_MSCOCO/annotations/scan_split/1.0_noise_train_caps.txt'
 
 with open(noise_file_path, 'r', encoding='utf-8') as f:
     noise_texts = f.readlines()
