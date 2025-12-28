@@ -12,7 +12,7 @@ client = OpenAI(
 )
 
 # Read CSV data
-file_path = '/home/zbm/xjd/NPC-master/flickr_annotations_30k.csv'
+file_path = '/path/dataset/flickr_annotations_30k.csv'
 data = pd.read_csv(file_path)
 train_data = data[data['split'] == 'train']
 
@@ -26,7 +26,7 @@ for row in train_data.itertuples():
 
 text_data = pd.DataFrame({'raw': raw_texts, 'img_id': img_ids})
 original_texts = raw_texts.copy()
-replace_ratio = 1.0
+replace_ratio = 1.0 # noise ratio
 num_texts = len(raw_texts)
 num_to_replace = num_texts  
 indices_to_replace = list(range(num_texts))  
@@ -119,7 +119,7 @@ pbar.close()
 
 print(f"Actual number of noisy texts generated: {modified_count}")
 
-output_test_file_path = f'/home/zbm/xjd/NPC-master/dataset/incomplete_description_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
+output_test_file_path = f'/path/dataset/Short_Description_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
 
 
 with open(output_test_file_path, 'w', encoding='utf-8') as f:
