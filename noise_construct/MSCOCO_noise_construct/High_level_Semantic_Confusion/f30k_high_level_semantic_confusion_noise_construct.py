@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 import random
 
 # Enter file path
-file_path = '/path/dataset/k_means_MSCOCO/annotations/scan_split/0_noise_train_caps.txt' 
+file_path = '/path/dataset/High_level_Semantic_Confusion_MSCOCO/annotations/scan_split/0_noise_train_caps.txt' 
 with open(file_path, 'r', encoding='utf-8') as f:
     lines = [line.strip() for line in f.readlines()]
 
@@ -52,7 +52,7 @@ for cluster in range(n_clusters):
                         replacements.append((img_idx, desc_idx, original_text, replacement_text))
 
 # Output file path
-output_file = f'/path/dataset/k_means_MSCOCO/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'  
+output_file = f'/path/dataset/High_level_Semantic_Confusion_MSCOCO/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'  
 with open(output_file, 'w', encoding='utf-8') as f:
     for image_desc in modified_descriptions:
         for text in image_desc:
