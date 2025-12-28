@@ -2,13 +2,13 @@ import random
 from tqdm import tqdm
 
 # Read raw text data
-file_path = '/path/dataset/core_missing_Error_noise_5eeror_coco/annotations/scan_split/0_noise_train_caps.txt'
+file_path = '/path/dataset/Object_Omission_noise_5error_MSCOCO/annotations/scan_split/0_noise_train_caps.txt'
 with open(file_path, 'r', encoding='utf-8') as f:
     raw_texts = f.readlines()
 raw_texts = [text.strip() for text in raw_texts]
 
 # Path to noise file
-noise_file_path = '/path/dataset/core_missing_Error_noise_5eeror_coco/annotations/scan_split/1.0_noise_train_caps.txt'
+noise_file_path = '/path/dataset/Object_Omission_noise_5error_MSCOCO/annotations/scan_split/1.0_noise_train_caps.txt'
 
 with open(noise_file_path, 'r', encoding='utf-8') as f:
     noise_texts = f.readlines()
@@ -43,7 +43,7 @@ print(f"A total of {replacement_count} text descriptions have been replaced.")
 print(f"Involving {num_images_to_replace} images")
 
 # Output file path
-output_file_path = f'/path/dataset/core_missing_Error_noise_5eeror_coco/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
+output_file_path = f'/path/dataset/Object_Omission_noise_5error_MSCOCO/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
 with open(output_file_path, 'w', encoding='utf-8') as f:
     for text in raw_texts:
         cleaned_text = text.lstrip().split('. ', 1)

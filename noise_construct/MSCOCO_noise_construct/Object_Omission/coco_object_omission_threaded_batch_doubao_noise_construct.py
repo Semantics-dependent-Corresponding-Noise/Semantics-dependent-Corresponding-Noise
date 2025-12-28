@@ -23,9 +23,9 @@ CHECKPOINT_INTERVAL = 50
 
 
 DATASET_TYPE = 'coco'
-IMAGE_DIR = '/path/dataset/core_missing_Error_noise_MSCOCO/images'
-TRAIN_IDS_PATH = '/path/dataset/core_missing_Error_noise_MSCOCO/annotations/scan_split/train_ids.txt'
-OUTPUT_DIR = '/path/noise_construct/MSCOCO_noise_cinstruct/core_missing/train_file'
+IMAGE_DIR = '/path/dataset/Object_Omission_noise_MSCOCO/images'
+TRAIN_IDS_PATH = '/path/dataset/Object_Omission_noise_MSCOCO/annotations/scan_split/train_ids.txt'
+OUTPUT_DIR = '/path/noise_construct/MSCOCO_noise_construct/Object_Omission/train_file'
 
 LOG_FILE = os.path.join(OUTPUT_DIR, 'processing.log')
 CHECKPOINT_FILE = os.path.join(OUTPUT_DIR, 'checkpoint.json')

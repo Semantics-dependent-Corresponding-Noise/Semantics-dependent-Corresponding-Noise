@@ -107,10 +107,10 @@ def sync_merge_description_files(input_dir, output_file):
 
 if __name__ == "__main__":
     # Input directory (containing the directory with split files)
-    INPUT_DIR = '/path/noise_construct/MSCOCO_noise_cinstruct/core_missing/train_file'
+    INPUT_DIR = '/path/noise_construct/MSCOCO_noise_construct/Object_Omission/train_file'
     
     # Output file (merged complete file)
-    OUTPUT_FILE = '/path/dataset/core_missing_Error_noise_MSCOCO/annotations/scan_split/1.0_noise_train_caps.txt'
+    OUTPUT_FILE = '/path/dataset/Object_Omission_noise_MSCOCO/annotations/scan_split/1.0_noise_train_caps.txt'
     
     # Whether to use asynchronous mode (recommended: True, for faster performance)
     USE_ASYNC = True
