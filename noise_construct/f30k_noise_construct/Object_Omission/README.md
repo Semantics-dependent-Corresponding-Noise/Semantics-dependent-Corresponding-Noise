@@ -27,7 +27,7 @@ Run the command `python merge_files.py`. This script scans the `./train_flickr/`
 ### Phase II: Generate Test Set Noise
 
 **Generate Test Noise**
-Run the command `python f30k_object_omission_test_noise_doubao.py`. This script directly generates the complete noise file for the test set, following the same logic used for the training set generation but without the need for subsequent merging.
+First, run the command `python f30k_object_omission_test_noise_doubao.py` to create the split files. Then, run the command `python merge_files.py` to combine them. **Note:** You must modify three variables within the `merge_files.py` script before running it for the test set: `pattern`, `INPUT_DIR`, and `OUTPUT_FILE`. Configure the script to scan the `./test_flickr/` directory for files matching the format `test_caps_5_per_image_part{file_number}.txt` and merge them into a single output file named `text_core.txt`.
 
 ### Phase III: Generate Noise with Specified Ratio
 
