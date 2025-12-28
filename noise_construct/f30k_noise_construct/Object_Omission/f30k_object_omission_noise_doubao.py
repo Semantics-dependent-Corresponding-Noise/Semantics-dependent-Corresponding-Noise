@@ -16,10 +16,10 @@ client = OpenAI(
 )
 
 # Path Configuration
-train_ids_path = '/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/train_ids.txt'
-image_names_path = '/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/image_name.txt'
-IMAGE_DIR = '/path/dataset/core_missing_Error_noise_f30k/images'
-OUTPUT_DIR = '/path/noise_construct/f30k_noise_construct/core_missing/train_flickr'
+train_ids_path = '/path/dataset/Object_Omission_noise_f30k/annotations/scan_split/train_ids.txt'
+image_names_path = '/path/dataset/Object_Omission_noise_f30k/annotations/scan_split/image_name.txt'
+IMAGE_DIR = '/path/dataset/Object_Omission_noise_f30k/images'
+OUTPUT_DIR = '/path/noise_construct/f30k_noise_construct/Object_Omission/train_flickr'
 LOG_FILE = os.path.join(OUTPUT_DIR, 'processing.log')  
 
 
