@@ -6,7 +6,7 @@ This directory contains the generated noise datasets used for training and testi
 
 The folders are organized by **Error Type**, **Noise Intensity (Condition)**, and **Source Dataset**.
 
-
+```text
 dataset/
 ├── Entity_Referential_Error_noise_5error_MSCOCO/    # Entity errors (All 5 captions noisy) - COCO
 ├── Entity_Referential_Error_noise_5error_f30k/      # Entity errors (All 5 captions noisy) - Flickr30k
