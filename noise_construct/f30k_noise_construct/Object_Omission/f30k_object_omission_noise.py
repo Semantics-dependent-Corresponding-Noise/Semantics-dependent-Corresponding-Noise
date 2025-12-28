@@ -2,7 +2,7 @@ import random
 from tqdm import tqdm
 
 # Load original text data
-file_path = '/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/0_noise_train_caps.txt'
+file_path = '/path/dataset/Object_Omission_noise_f30k/annotations/scan_split/0_noise_train_caps.txt'
 
 with open(file_path, 'r', encoding='utf-8') as f:
     raw_texts = f.readlines()
@@ -10,7 +10,7 @@ with open(file_path, 'r', encoding='utf-8') as f:
 raw_texts = [text.strip() for text in raw_texts]
 
 # Path to noise file
-noise_file_path = '/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
+noise_file_path = '/path/dataset/Object_Omission_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
 
 with open(noise_file_path, 'r', encoding='utf-8') as f:
     noise_texts = f.readlines()
@@ -36,7 +36,7 @@ for replace_ratio in replace_ratios:
         modified_texts[idx] = noise_texts[idx]
     
     # Output file path
-    output_file_path = f'/path/dataset/core_missing_Error_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
+    output_file_path = f'/path/dataset/Object_Omission_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
     
     with open(output_file_path, 'w', encoding='utf-8') as f:
         for text in modified_texts:
