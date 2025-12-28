@@ -4,7 +4,7 @@ import random
 from tqdm import tqdm
 
 # Read CSV data
-file_path = '/path/flickr_annotations_30k.csv'
+file_path = '/path/dataset/flickr_annotations_30k.csv'
 data = pd.read_csv(file_path)
 train_data = data[data['split'] == 'train']
 
@@ -19,7 +19,7 @@ text_data = pd.DataFrame({'raw': raw_texts, 'img_id': img_ids})
 
 
 # Noise file path
-noise_file_path = '/path/dataset/incomplete_description_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
+noise_file_path = '/path/dataset/Short_Description_noise_f30k/annotations/scan_split/1.0_noise_train_caps.txt'
 
 with open(noise_file_path, 'r', encoding='utf-8') as f:
     noise_texts = f.readlines()
@@ -36,7 +36,7 @@ for idx in tqdm(indices_to_replace, desc="Replacing texts"):
     raw_texts[idx] = noise_texts[idx]
 
 # Output file path
-output_file_path = f'/path/dataset/incomplete_description_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
+output_file_path = f'/path/dataset/Short_Description_noise_f30k/annotations/scan_split/{replace_ratio}_noise_train_caps.txt'
 
 with open(output_file_path, 'w', encoding='utf-8') as f:
     for text in raw_texts:
