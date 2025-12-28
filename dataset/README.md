@@ -24,7 +24,7 @@ dataset/
 ├── Short_Description_noise_5error_f30k/             # Incomplete errors (All 5 captions noisy) - Flickr30k
 ├── Short_Description_noise_MSCOCO/                  # Incomplete errors (Partial/Mixed noise) - COCO
 └── Short_Description_noise_f30k/                    # Incomplete errors (Partial/Mixed noise) - Flickr30k
-`
+```
 ## 🏷️ Naming Convention
 
 Folders are named using the following pattern:
