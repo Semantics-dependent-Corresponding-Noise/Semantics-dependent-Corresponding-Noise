@@ -8,23 +8,27 @@ The folders are organized by **Error Type**, **Noise Intensity (Condition)**, an
 
 ```text
 dataset/
-├── Entity_Referential_Error_noise_5error_MSCOCO/    # Entity errors (All 5 captions noisy) - COCO
+├── Entity_Referential_Error_noise_5error_MSCOCO/    # Entity errors (All 5 captions noisy) - MS-COCO
 ├── Entity_Referential_Error_noise_5error_f30k/      # Entity errors (All 5 captions noisy) - Flickr30k
-├── Entity_Referential_Error_noise_MSCOCO/           # Entity errors (Partial/Mixed noise) - COCO
+├── Entity_Referential_Error_noise_MSCOCO/           # Entity errors (Partial/Mixed noise) - MS-COCO
 ├── Entity_Referential_Error_noise_f30k/             # Entity errors (Partial/Mixed noise) - Flickr30k
-├── High_level_Semantic_Confusion_5error_MSCOCO/     # Semantic errors (All 5 captions noisy) - COCO
+├── High_level_Semantic_Confusion_5error_MSCOCO/     # Semantic errors (All 5 captions noisy) - MS-COCO
 ├── High_level_Semantic_Confusion_5error_f30k/       # Semantic errors (All 5 captions noisy) - Flickr30k
-├── High_level_Semantic_Confusion_MSCOCO/            # Semantic errors (Partial/Mixed noise) - COCO
+├── High_level_Semantic_Confusion_MSCOCO/            # Semantic errors (Partial/Mixed noise) - MS-COCO
 ├── High_level_Semantic_Confusion_f30k/              # Semantic errors (Partial/Mixed noise) - Flickr30k
-├── Object_Omission_noise_5error_MSCOCO/             # Omission errors (All 5 captions noisy) - COCO
+├── Object_Omission_noise_5error_MSCOCO/             # Omission errors (All 5 captions noisy) - MS-COCO
 ├── Object_Omission_noise_5error_f30k/               # Omission errors (All 5 captions noisy) - Flickr30k
-├── Object_Omission_noise_MSCOCO/                    # Omission errors (Partial/Mixed noise) - COCO
+├── Object_Omission_noise_MSCOCO/                    # Omission errors (Partial/Mixed noise) - MS-COCO
 ├── Object_Omission_noise_f30k/                      # Omission errors (Partial/Mixed noise) - Flickr30k
-├── Short_Description_noise_5error_MSCOCO/           # Incomplete errors (All 5 captions noisy) - COCO
+├── Short_Description_noise_5error_MSCOCO/           # Incomplete errors (All 5 captions noisy) - MS-COCO
 ├── Short_Description_noise_5error_f30k/             # Incomplete errors (All 5 captions noisy) - Flickr30k
-├── Short_Description_noise_MSCOCO/                  # Incomplete errors (Partial/Mixed noise) - COCO
-└── Short_Description_noise_f30k/                    # Incomplete errors (Partial/Mixed noise) - Flickr30k
+├── Short_Description_noise_MSCOCO/                  # Incomplete errors (Partial/Mixed noise) - MS-COCO
+├── Short_Description_noise_f30k/                    # Incomplete errors (Partial/Mixed noise) - Flickr30k
+├── flickr_annotations_30k.csv                       # Mapping of text and image names stored in Flickr30k
+├── test_caps_mix_f30k.txt                           # Concatenation of clean test text and noise test text from Flickr30k
+└── test_caps_mix_coco.txt                           # Concatenation of clean test text and noise test text from MS-COCO
 ```
+For `test_caps_mix_f30k.txt` and `test_caps_mix_coco.txt`, the first 5,000 and 25,000 caps, respectively, are clean.
 ## 🏷️ Naming Convention
 
 Folders are named using the following pattern:
