@@ -537,7 +537,7 @@ async def main_async():
         total_files = (total_images + SAVE_INTERVAL - 1) // SAVE_INTERVAL
         print(f"   {total_files} files will be saved.")
         
-        # 加载检查点
+    
         print("\nLoading checkpoint...")
         checkpoint = await load_checkpoint()
         processed_count = checkpoint.get("processed_count", 0)
