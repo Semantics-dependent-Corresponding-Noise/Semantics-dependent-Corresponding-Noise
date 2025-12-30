@@ -4,7 +4,7 @@ import random
 from tqdm import tqdm
 
 # Read CSV data
-file_path = '/path/flickr_annotations_30k.csv'
+file_path = '/path/dataset/flickr_annotations_30k.csv'
 data = pd.read_csv(file_path)
 
 train_data = data[data['split'] == 'train']
